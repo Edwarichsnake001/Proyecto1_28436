@@ -5,7 +5,7 @@ template <typename T>
 class Pila
 {
 private:
-    NodoPila<T> cima;
+    NodoPila<T> *cima;
 
 public:
     Pila() : cima(NULL) {}
