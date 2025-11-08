@@ -34,6 +34,9 @@ bool Libros::coincideAutor(const std::string &a) const
     return autor == a;
 }
 
+/*Todavía no sé donde puedo implementar estos operadores ni como debería
+usarlo dentro del programa como una funcionalidad necesaria
+por lo que ahora solo están de """Adorno"""""*/
 bool Libros::operator<(const Libros &otro) const
 {
     return cantidad < otro.cantidad;
@@ -44,6 +47,7 @@ bool Libros::operator>(const Libros &otro) const
     return cantidad > otro.cantidad;
 }
 
+//Este no, este esta bien xd
 std::ostream &operator<<(std::ostream &os, const Libros &libro)
 {
     os << "Título: " << libro.titulo << endl
