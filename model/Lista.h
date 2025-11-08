@@ -28,4 +28,9 @@ public:
             actual = actual->getSiguiente();
         }
     }
+
+    NodoLista<T> *getCabeza() const
+    {
+        return cabeza;
+    }
 };
