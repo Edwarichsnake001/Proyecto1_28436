@@ -1,5 +1,6 @@
 #pragma once
 #include "NodoLista.h"
+#include <iostream>
 
 using namespace std;
 
@@ -10,7 +11,12 @@ private:
     NodoLista<T> *cabeza;
 
 public:
-    Lista() : cabeza(NULL) {}
+    Lista() : cabeza(nullptr) {}
+
+    NodoLista<T> *getCabeza() const
+    {
+        return cabeza;
+    }
 
     void insertar(const T &dato)
     {
@@ -22,15 +28,51 @@ public:
     void mostrar() const
     {
         NodoLista<T> *actual = cabeza;
-        while (actual != NULL)
+        while (actual != nullptr)
         {
             cout << actual->getDato() << endl;
             actual = actual->getSiguiente();
         }
     }
 
-    NodoLista<T> *getCabeza() const
+    bool estaVacia() const
     {
-        return cabeza;
+        return cabeza == nullptr;
+    }
+
+    void eliminar(const T &dato)
+    {
+        NodoLista<T> *actual = cabeza;
+        NodoLista<T> *anterior = nullptr;
+
+        while (actual)
+        {
+            if (actual->getDato() == dato)
+            {
+                if (anterior)
+                {
+                    anterior->setSiguiente(actual->getSiguiente());
+                }
+                else
+                {
+                    cabeza = actual->getSiguiente();
+                }
+                delete actual;
+                return;
+            }
+            anterior = actual;
+            actual = actual->getSiguiente();
+        }
+    }
+
+    ~Lista()
+    {
+        NodoLista<T> *actual = cabeza;
+        while (actual != nullptr)
+        {
+            NodoLista<T> *temp = actual;
+            actual = actual->getSiguiente();
+            delete temp;
+        }
     }
 };

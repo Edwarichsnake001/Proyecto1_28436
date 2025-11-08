@@ -8,7 +8,7 @@ private:
     NodoPila<T> *cima;
 
 public:
-    Pila() : cima(NULL) {}
+    Pila() : cima(nullptr) {}
 
     void push(const T &dato)
     {
@@ -19,7 +19,7 @@ public:
 
     void pop()
     {
-        if (cima == NULL)
+        if (cima == nullptr)
         {
             std::cout << "La pila está vacía\n";
             return;
@@ -31,7 +31,7 @@ public:
 
     t peek() const
     {
-        if (cima == NULL)
+        if (cima == nullptr)
         {
             std::cout << "Pila vacía\n";
             return;
@@ -41,7 +41,7 @@ public:
     void mostrar() const
     {
         NodoPila<T> *actual = cima;
-        while (cima != NULL)
+        while (cima != nullptr)
         {
             std::cout << actual->getDato() << std::endl;
             actual = actual->getAnterior();

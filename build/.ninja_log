@@ -1,0 +1,5 @@
+# ninja log v6
+13	418	7843481006285606	CMakeFiles/Proyecto1.dir/model/Libros.cpp.obj	1c421f7b511ba495
+20	462	7843481006354153	CMakeFiles/Proyecto1.dir/view/main.cpp.obj	ffcc3432bf3e0a9c
+50	578	7843483110466302	CMakeFiles/Proyecto1.dir/controller/LibrosController.cpp.obj	ff022867b4ba61b6
+579	767	7843483115759014	Proyecto1.exe	4c856ab3aff7a935

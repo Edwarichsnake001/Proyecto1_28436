@@ -6,17 +6,32 @@ using namespace std;
 
 string Libros::getTitulo() const
 {
-    return string();
+    return titulo;
 }
 
 string Libros::getAutor() const
 {
-    return string();
+    return autor;
 }
 
 string Libros::getCodigo() const
 {
-    return string();
+    return codigo;
+}
+
+int Libros::getCantidad() const
+{
+    return cantidad;
+}
+
+bool Libros::operator==(const Libros &otro) const
+{
+   return codigo == otro.codigo;
+}
+
+void Libros::setDisponible(bool estado)
+{
+    disponible = estado;
 }
 
 bool Libros::disponibilidad() const

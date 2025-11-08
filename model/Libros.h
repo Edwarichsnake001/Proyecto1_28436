@@ -15,7 +15,8 @@ private:
     int cantidad;
 
 public:
-    Libros(string tit, string aut, string cod, bool disp) : titulo(tit), autor(aut), codigo(cod), disponible(disp) {}
+    Libros(string tit, string aut, string cod, bool disp, int cant)
+        : titulo(tit), autor(aut), codigo(cod), disponible(disp), cantidad(cant) {}
 
     string getTitulo() const;
 
@@ -23,10 +24,16 @@ public:
 
     string getCodigo() const;
 
+    int getCantidad() const;
+
+    bool operator==(const Libros &otro) const;
+
+    void setDisponible(bool estado);
+
     bool disponibilidad() const;
 
-    bool coincideTitulo(const std::string& t) const;
-    bool coincideAutor(const std::string& a) const;
+    bool coincideTitulo(const std::string &t) const;
+    bool coincideAutor(const std::string &a) const;
 
     friend std::ostream &operator<<(std::ostream &os, const Libros &libro);
 

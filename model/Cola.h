@@ -10,42 +10,45 @@ class Cola
 private:
     NodoCola<T> *rear;
     NodoCola<T> *front;
-public:
-    Cola(): front(NULL), rear(NULL){}
 
-    void encolar(const T& dato);
+public:
+    Cola() : front(nullptr), rear(nullptr) {}
+
+    void encolar(const T &dato);
     T desencolar();
     bool estaVacia() const;
     void mostrar() const;
-
 };
 
 template <typename T>
 inline bool Cola<T>::estaVacia() const
 {
-    return front == NULL;
+    return front == nullptr;
 }
 
 template <typename T>
- void Cola<T>::mostrar() const
+void Cola<T>::mostrar() const
 {
-    NodoCola<T>* actual = front;
-    while (actual != nullptr) {
+    NodoCola<T> *actual = front;
+    while (actual != nullptr)
+    {
         std::cout << actual->getDato() << std::endl;
         actual = actual->getSiguiente();
     }
 }
 
-
 template <typename T>
 void Cola<T>::encolar(const T &dato)
 {
     NodoCola<T> *nuevo = new NodoCola<T>(dato);
-    if(estaVacia()){
+    if (estaVacia())
+    {
         front = rear = nuevo;
-    }else{
+    }
+    else
+    {
         rear->setSiguiente(nuevo)
-        rear = nuevo;
+            rear = nuevo;
     }
 }
 
@@ -58,9 +61,9 @@ T Cola<T>::desencolar()
         return T();
     }
 
-    NodoCola<T> *temp= front;
+    NodoCola<T> *temp = front;
     T dato = temp->getDato();
-    front = front -> getSiguiente();
+    front = front->getSiguiente();
 
     if (front == NULL)
     {
@@ -68,6 +71,6 @@ T Cola<T>::desencolar()
     }
 
     delete temp;
-    return dato;    
+    return dato;
     return T();
 }
