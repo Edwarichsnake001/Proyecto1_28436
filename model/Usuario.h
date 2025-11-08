@@ -15,10 +15,11 @@ private:
     string nombre;
     string cedula;
     string id;
+    string contrasena;
     Rol rol;
 
 public:
-    Usuario(string nom, string ced, string i, Rol r) : nombre(nom), cedula(ced), id(i), rol(r) {}
+    Usuario(string nom, string ced, string i, string cont, Rol r) : nombre(nom), cedula(ced), id(i), contrasena(cont), rol(r) {}
 
     Rol getRol() const
     {
