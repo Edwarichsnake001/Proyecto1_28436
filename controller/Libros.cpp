@@ -26,22 +26,22 @@ bool Libros::disponibilidad() const
 
 bool Libros::coincideTitulo(const std::string &t) const
 {
-    return false;
+    return titulo == t;
 }
 
 bool Libros::coincideAutor(const std::string &a) const
 {
-    return false;
+    return autor == a;
 }
 
 bool Libros::operator<(const Libros &otro) const
 {
-    return false;
+    return cantidad < otro.cantidad;
 }
 
 bool Libros::operator>(const Libros &otro) const
 {
-    return false;
+    return cantidad > otro.cantidad;
 }
 
 std::ostream &operator<<(std::ostream &os, const Libros &libro)
@@ -49,7 +49,7 @@ std::ostream &operator<<(std::ostream &os, const Libros &libro)
     os << "Título: " << libro.titulo << endl
        << "Autor: " << libro.autor << endl
        << "Código: " << libro.codigo << endl
-       << "Estado: " << libro.disponible << endl
-       << "Cantidad" << libro.cantidad << endl;
+       << "Estado: " << (libro.disponible ? "Disponible" : "Prestado") << endl
+       << "Cantidad: " << libro.cantidad << endl;
     return os;
 }
