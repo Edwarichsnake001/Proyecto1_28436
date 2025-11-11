@@ -26,6 +26,11 @@ public:
         return rol;
     }
 
+    string getNombre() const { return nombre; }
+    string getCedula() const { return cedula; }
+    string getId() const { return id; }
+    string getContrasena() const { return contrasena; }
+
     bool esAdministrador() const
     {
         return rol == Rol::Admin;

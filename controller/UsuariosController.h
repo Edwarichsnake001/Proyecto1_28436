@@ -6,11 +6,15 @@
 
 using namespace std;
 
-class UsuariosControlador{
-    private:
-        vector<Usuario> usuarios;
-    public:
-        Usuario *login(const string id, const string &contrasena);
-        void agregarUsuario(const Usuario& nuevoUser);
-        Usuario *busquedaID(const string &id);
+class UsuariosControlador
+{
+private:
+    vector<Usuario> usuarios;
+
+public:
+    UsuariosControlador();
+    Usuario *login(const string id, const string &contrasena);
+    void agregarUsuario(const Usuario &nuevoUser);
+    Usuario *busquedaID(const string &id);
+    
 };
