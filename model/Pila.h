@@ -29,13 +29,14 @@ public:
         delete temp;
     }
 
-    t peek() const
+    T peek() const
     {
         if (cima == nullptr)
         {
             std::cout << "Pila vacía\n";
-            return;
+            return T();
         }
+        return cima->getDato();
     }
 
     void mostrar() const

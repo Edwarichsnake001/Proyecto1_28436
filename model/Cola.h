@@ -47,8 +47,8 @@ void Cola<T>::encolar(const T &dato)
     }
     else
     {
-        rear->setSiguiente(nuevo)
-            rear = nuevo;
+        rear->setSiguiente(nuevo);
+        rear = nuevo;
     }
 }
 

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Proyecto1.dir\\controller\\LibrosController.cpp.obj -c C:\\Users\\mate-\\Desktop\\PROYECTO1_ED\\Proyecto1_28436\\controller\\LibrosController.cpp",
+  "file": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/controller/LibrosController.cpp",
+  "output": "CMakeFiles/Proyecto1.dir/controller/LibrosController.cpp.obj"
+},
+{
+  "directory": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Proyecto1.dir\\controller\\UsuariosController.cpp.obj -c C:\\Users\\mate-\\Desktop\\PROYECTO1_ED\\Proyecto1_28436\\controller\\UsuariosController.cpp",
+  "file": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/controller/UsuariosController.cpp",
+  "output": "CMakeFiles/Proyecto1.dir/controller/UsuariosController.cpp.obj"
+},
+{
+  "directory": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Proyecto1.dir\\model\\Libros.cpp.obj -c C:\\Users\\mate-\\Desktop\\PROYECTO1_ED\\Proyecto1_28436\\model\\Libros.cpp",
+  "file": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/model/Libros.cpp",
+  "output": "CMakeFiles/Proyecto1.dir/model/Libros.cpp.obj"
+},
+{
+  "directory": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\Proyecto1.dir\\view\\main.cpp.obj -c C:\\Users\\mate-\\Desktop\\PROYECTO1_ED\\Proyecto1_28436\\view\\main.cpp",
+  "file": "C:/Users/mate-/Desktop/PROYECTO1_ED/Proyecto1_28436/view/main.cpp",
+  "output": "CMakeFiles/Proyecto1.dir/view/main.cpp.obj"
+}
+]
