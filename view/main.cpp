@@ -158,7 +158,7 @@ int main() {
         return 1;
     }
 
-    cout << "✅ Bienvenido, " << usuarioActual->getNombre() << "\n";
+    cout << "Bienvenido, " << usuarioActual->getNombre() << "\n";
 
     if (usuarioActual->esAdministrador()) {
         ejecutarMenuAdmin(lista);
