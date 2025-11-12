@@ -1,0 +1,8 @@
+# Usuarios del Sistema - Formato: id|nombre|rol|cedula|contrasena|prestamos
+# prestamos: codigo~titulo~fecha;codigo~titulo~fecha;...
+
+admin01|Mateo|Admin|0102030405|clave123|001~Don Quijote~2025-11-01;003~El Señor de los Anillos~2025-11-05
+user01|Ana García|Usuario|1122334455|libros456|002~Cien Años de Soledad~2025-11-08;013~Drácula~2025-10-20
+user02|Jorge Pérez|Usuario|0987654321|password123|008~Harry Potter y la Piedra Filosofal~2025-11-10
+user03|María López|Usuario|5555666677|mipass789|004~1984~2025-11-07
+user04|Carlos Ruiz|Usuario|1234567890|carlos123|009~El Hobbit~2025-11-09;006~El Quijote Parte II~2025-10-28

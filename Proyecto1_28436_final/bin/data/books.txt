@@ -1,0 +1,18 @@
+# Catálogo de Libros - Formato: codigo|titulo|autor|cantidad|disponible(0/1)
+# Este archivo se genera automáticamente. Editar manualmente solo si es necesario.
+
+001|Don Quijote|Miguel de Cervantes|3|1
+002|Cien Años de Soledad|Gabriel García Márquez|2|1
+003|El Señor de los Anillos|J.R.R. Tolkien|1|0
+004|1984|George Orwell|5|1
+005|Orgullo y Prejuicio|Jane Austen|4|1
+006|El Quijote Parte II|Miguel de Cervantes|2|1
+007|La Revolución Francesa|Anatole France|1|1
+008|Harry Potter y la Piedra Filosofal|J.K. Rowling|6|1
+009|El Hobbit|J.R.R. Tolkien|3|1
+010|Crimen y Castigo|Fiódor Dostoyevski|2|1
+011|Mujercitas|Louisa May Alcott|3|1
+012|Jane Eyre|Charlotte Brontë|2|1
+013|Drácula|Bram Stoker|2|0
+014|Frankenstein|Mary Shelley|3|1
+015|El Retrato de Dorian Gray|Oscar Wilde|1|1
