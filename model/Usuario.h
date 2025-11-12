@@ -37,9 +37,4 @@ public:
         return rol == Rol::Admin;
     }
 
-    void asignarLibro(const T &libro)
-    {
-        librosPrestados.push_back(libro);
-    }
-
 };
