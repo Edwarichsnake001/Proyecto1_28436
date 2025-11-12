@@ -9,6 +9,7 @@ enum class Rol
     Admin
 };
 
+template <typename T>
 class Usuario
 {
 private:
@@ -35,4 +36,10 @@ public:
     {
         return rol == Rol::Admin;
     }
+
+    void asignarLibro(const T &libro)
+    {
+        librosPrestados.push_back(libro);
+    }
+
 };
